@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="box">
+        <h1>slideupdowntoggle</h1>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro tenetur necessitatibus quasi perspiciatis, enim, reprehenderit aperiam aspernatur deserunt nesciunt assumenda rem. Non inventore, illo deserunt animi consectetur esse odio!</p>
+    <button class="slideup">slideup</button>
+    <button class="slidedown">slidedown</button>
+    <button class="slidetoggle">slidetoggle</button>
+    </div>
+    <script>
+        $(document).ready(function(){ 
+            $(".slideup").click(function(){
+                $(".p").slideUp();
+            });
+            $(".slidedown").click(function(){
+                $(".p").slideDown();
+            });
+            $(".slidetoggle").click(function(){
+                $(".p").slideToggle();
+            });
+          
+
+        })
+    </script>
+    
+</body>
+</html>
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<style>
+    #result{
+    border:1px solid black;
+    height:200px;
+    width:200px;
+
+}
+#box{
+    height:50px;
+    width:50px;
+    border:1px solid black;
+
+}
+</style>
+</head>
+<body>
+    <h1>jquery pagex and pagey</h1>
+    <div id="result"></div>
+    <div id="box"></div>
+        <script>
+            $(document).ready(function(){
+                $(document).mousemove(function(event){
+                    $("#result").text("X:"+event.pageX+"Y:"+event.pageY);
+                 var x=event.pageX;
+                 var y=event.pageY;
+                 $('#box').offset({top:y,left:x});
+                })
+            })
+                
+            
+        </script>
+
+    </div>
+</body>
+</html>

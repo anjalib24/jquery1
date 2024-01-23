@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="box">
+    <h1>jquery hide show & toggle</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla beatae distinctio hic reprehenderit modi, neque veritatis. Praesentium, eveniet nesciunt! Eum amet nulla provident commodi asperiores alias illum numquam ducimus consequatur blanditiis mollitia, quam hic distinctio saepe aliquid fuga! Quam modi nesciunt expedita cum amet sapiente adipisci? Consequatur debitis atque dolore mollitia quae nisi reiciendis iusto doloremque sint possimus, fugiat quas vitae ex tempore, doloribus error vel veritatis, in cumque tempora earum facere necessitatibus quasi repellendus? Et unde, earum labore eius possimus excepturi iusto officiis dolorum at ea, magnam quas quam esse sunt error architecto maxime expedita! Accusamus corporis fugiat neque.</p>
+   </div>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $("#box").hide(3000,function(){
+                    console.log("now it is hidden");
+                });
+            })
+            $('#show').click(function(){
+                $("#box").show("slow");
+            })
+            $('#toggle').click(function(){
+                $("#box").toggle("slow");
+            })
+        });
+    </script>
+    
+</body>
+</html>
